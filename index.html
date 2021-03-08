@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/myBlog.io/favicon.ico"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="../src/assets/yusei-font.css" rel="stylesheet"><link rel="stylesheet" href="../src/assets/index.scss"><title>blog</title><script src="https://at.alicdn.com/t/font_2352323_lawc4nul8s.js"></script><link href="/myBlog.io/css/app.7cb732f3.css" rel="preload" as="style"><link href="/myBlog.io/js/app.4254e662.js" rel="preload" as="script"><link href="/myBlog.io/js/chunk-vendors.da99e157.js" rel="preload" as="script"><link href="/myBlog.io/css/app.7cb732f3.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/myBlog.io/js/chunk-vendors.da99e157.js"></script><script src="/myBlog.io/js/app.4254e662.js"></script></body><script>const OriginTitle = document.title;
+    let titleTime;
+    document.addEventListener('visibilitychange', function(){
+      if (document.hidden){
+        document.title = '(●—●)喔哟，崩溃啦！';
+        clearTimeout(titleTime);
+      }else{
+        document.title = '(/≧▽≦/)咦！又好了！';
+        titleTime = setTimeout(function() {
+          document.title = OriginTitle;
+        }, 500);
+      }
+    });</script></html>
